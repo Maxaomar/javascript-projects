@@ -1,11 +1,9 @@
-// import { products } from "../data/products";
+import { products } from "../data/products.js";
 
 
-// let productsHTML;
+let productsHTML;
 
-// products.forEach((product) => {
-// })
+products.forEach((product) => {
+    
+})
 
-
-console.log("helo")
-console.log('hello world')
