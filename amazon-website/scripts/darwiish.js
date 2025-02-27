@@ -1,5 +1,5 @@
 import { products } from "../data/products.js";
-const displayProducts = document.getElementById("products-grid")
+const displayProducts = document.querySelector(".main")
 
 
 
@@ -9,17 +9,17 @@ products.forEach((product) => {
     productsHTML += `
     <div class="product-container">
         <div  class="product-image-container">
-           <img src="images/products/6-piece-non-stick-baking-set.webp" alt="">
+           <img src="${product.image}" alt="">
         </div>
 
-        <div class="product-name">6-piece-non-stick-baking-set.webp</div>
+        <div class="product-name">${product.name}</div>
 
         <div class="product-rating-container">
-            <img src="images//ratings/rating-0.png" alt="">
-            <div class="product-rating-count"></div>
+            <img src="images/ratings/rating-${product.rating.stars * 10}.png" alt="">
+            <div class="product-rating-count">${product.rating.count}</div>
         </div>
 
-        <div class="product-price">$10.99</div>
+        <div class="product-price"> $${(product.priceCents / 100).toFixed(2)}</div>
 
         <div class="product-quantity-container">
           <select name="" id="">
@@ -39,7 +39,7 @@ products.forEach((product) => {
      <button class="" id="">Add to cart</button>
      </div>
     `
-})
+});
 
 displayProducts.innerHTML = productsHTML;
 
