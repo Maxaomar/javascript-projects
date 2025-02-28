@@ -1,3 +1,4 @@
+import { cart } from "../data/cart.js";
 import { products } from "../data/products.js";
 const displayProducts = document.querySelector(".main")
 
@@ -50,3 +51,5 @@ cartButton.forEach((button) => {
         console.log("added to cart");
     });
 })
+
+console.log(cart)
