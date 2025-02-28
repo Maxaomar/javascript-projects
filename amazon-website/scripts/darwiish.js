@@ -3,6 +3,7 @@ const displayProducts = document.querySelector(".main")
 
 
 
+
 let productsHTML = '';
 
 products.forEach((product) => {
@@ -36,10 +37,16 @@ products.forEach((product) => {
          </select>
         </div>
 
-     <button class="" id="">Add to cart</button>
+     <button class="cart-button">Add to cart</button>
      </div>
     `
 });
 
 displayProducts.innerHTML = productsHTML;
 
+const cartButton = document.querySelectorAll(".cart-button");
+cartButton.forEach((button) => {
+    button.addEventListener("click", () => {
+        console.log("added to cart");
+    });
+})
