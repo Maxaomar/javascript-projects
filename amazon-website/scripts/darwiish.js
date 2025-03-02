@@ -38,7 +38,9 @@ products.forEach((product) => {
          </select>
         </div>
 
-     <button class="cart-button">Add to cart</button>
+     <button class="cart-button" data-product-id="${product.id}">
+         Add to cart
+    </button>
      </div>
     `
 });
@@ -52,4 +54,16 @@ cartButton.forEach((button) => {
     });
 })
 
+let matchingItem;
+
+cart.forEach((item) => {
+    let productId = productId;
+    
+    if (matchingItem === productId) {
+        
+    }
+    item.push({
+        
+    })
+})
 console.log(cart)
