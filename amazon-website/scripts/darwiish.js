@@ -44,28 +44,24 @@ products.forEach((product) => {
      </div>
     `
 });
-
 displayProducts.innerHTML = productsHTML;
 
+
 const cartButton = document.querySelectorAll(".cart-button");
+
+
 cartButton.forEach((button) => {
     button.addEventListener("click", () => {
+        console.log("clicked")
+        const productsName = button.dataset.productName;
 
+        cart.forEach((item) => {
+            cart.push({
+                productName: productsName,
+                quantity: 1
+            })
+        })
 
-    });
+        console.log(cart)
+    })
 })
-
-//let matchingItem;
-
-// cart.forEach((item) => {
-//     // let productId = productId;
-
-//     // if (matchingItem === productId) {
-
-//     // }
-//     // item.push({
-//     //     productName: productName,
-//     //     quantity: 1
-//     // })
-// })
-// console.log(products)
