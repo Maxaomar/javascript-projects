@@ -6,3 +6,16 @@ export const cart = [
     name: 'six pack socks'
   }
 ]
+
+
+
+
+// function addToCart() {
+
+//   let matchingItem;
+
+//   cart.forEach((cartItem) => {
+//       if (matchingItem === ) {
+//       }
+//   })
+// }

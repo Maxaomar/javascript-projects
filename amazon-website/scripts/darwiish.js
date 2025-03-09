@@ -54,14 +54,25 @@ cartButton.forEach((button) => {
     button.addEventListener("click", () => {
         console.log("clicked")
         const productsName = button.dataset.productName;
+        addToCart()
 
-        cart.forEach((item) => {
-            cart.push({
-                productName: productsName,
-                quantity: 1
-            })
-        })
-
-        console.log(cart)
     })
 })
+
+
+
+function addToCart() {
+
+    let matchingItem;
+
+    cart.forEach((cartItem) => {
+        if (matchingItem === productName) {
+            matchingItem ++
+        }
+
+        cart.push({
+            productName: productName,
+            quantity: 1
+        })
+    })
+  }
