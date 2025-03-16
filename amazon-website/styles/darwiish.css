@@ -2,8 +2,19 @@
   display: flex;
   justify-content: space-between;
 } */
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
 
+.header{
+  background-color: rgba(0, 0, 0, 0.842);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
 .main{
   display: flex;
   justify-content: space-between;
